@@ -3,4 +3,4 @@ If you encounter SSL certificate validation errors when running the agent with t
 Run these 2 commands in your terminal:
 
 pip install certifi
-/Applications/Python\ 3.9/Install\ Certificates.command
+/Applications/Python\ 3.9/Install\ Certificates.command 
