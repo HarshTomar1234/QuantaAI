@@ -2,7 +2,8 @@
 
 <div align="center">
 
-<img src="assets/images/quanta-logo.svg" alt="Quanta AI Logo" width="150" height="150" />
+
+<img src="assets/images/quanta-logo.svg" alt="Quanta AI Logo" width="200" height="200" />
 
 **An intelligent AI-powered search assistant with real-time web search capabilities**
 
