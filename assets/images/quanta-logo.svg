@@ -1,35 +1,154 @@
-<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background Circle -->
-  <circle cx="100" cy="100" r="95" fill="url(#gradient)" opacity="0.1"/>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cosmic Background -->
+  <rect width="400" height="400" fill="#0A0118"/>
 
-  <!-- Quantum Particles -->
-  <circle cx="100" cy="60" r="8" fill="#8B5CF6"/>
-  <circle cx="130" cy="80" r="6" fill="#A78BFA"/>
-  <circle cx="70" cy="80" r="6" fill="#A78BFA"/>
-  <circle cx="100" cy="100" r="12" fill="#8B5CF6"/>
-  <circle cx="140" cy="110" r="5" fill="#C4B5FD"/>
-  <circle cx="60" cy="110" r="5" fill="#C4B5FD"/>
-  <circle cx="100" cy="140" r="7" fill="#8B5CF6"/>
+  <!-- Outer Glow Ring -->
+  <circle cx="200" cy="200" r="140" fill="url(#outerGlow)" opacity="0.4"/>
+  <circle cx="200" cy="200" r="120" fill="url(#middleGlow)" opacity="0.5"/>
 
-  <!-- Connection Lines (wave-like) -->
-  <path d="M100 60 Q115 70 130 80" stroke="#8B5CF6" stroke-width="2" fill="none" opacity="0.6"/>
-  <path d="M100 60 Q85 70 70 80" stroke="#8B5CF6" stroke-width="2" fill="none" opacity="0.6"/>
-  <path d="M130 80 L100 100" stroke="#A78BFA" stroke-width="2" opacity="0.4"/>
-  <path d="M70 80 L100 100" stroke="#A78BFA" stroke-width="2" opacity="0.4"/>
-  <path d="M100 100 Q120 105 140 110" stroke="#8B5CF6" stroke-width="2" fill="none" opacity="0.6"/>
-  <path d="M100 100 Q80 105 60 110" stroke="#8B5CF6" stroke-width="2" fill="none" opacity="0.6"/>
-  <path d="M140 110 L100 140" stroke="#A78BFA" stroke-width="1.5" opacity="0.3"/>
-  <path d="M60 110 L100 140" stroke="#A78BFA" stroke-width="1.5" opacity="0.3"/>
-  <path d="M100 100 L100 140" stroke="#8B5CF6" stroke-width="2" opacity="0.5"/>
+  <!-- Main Holographic Circle -->
+  <circle cx="200" cy="200" r="100" fill="url(#holographic)" opacity="0.9"/>
 
-  <!-- Central "Q" Letter -->
-  <text x="100" y="110" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#8B5CF6" text-anchor="middle">Q</text>
+  <!-- Geometric Q Shape - Modern & Futuristic -->
+  <path d="M200 120 L200 140 C230 140 255 165 255 195 C255 225 230 250 200 250 L200 270 C241 270 275 236 275 195 C275 154 241 120 200 120Z"
+        fill="url(#neonCyan)" filter="url(#glow)"/>
+  <circle cx="200" cy="195" r="55" stroke="url(#neonPink)" stroke-width="8" fill="none" filter="url(#glow)"/>
+  <line x1="235" y1="230" x2="260" y2="255" stroke="url(#neonPink)" stroke-width="8" stroke-linecap="round" filter="url(#glow)"/>
 
-  <!-- Gradient Definition -->
+  <!-- Quantum Particle Burst -->
+  <g opacity="0.8">
+    <!-- Top particles -->
+    <circle cx="200" cy="60" r="6" fill="#00F5FF">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="230" cy="75" r="4" fill="#FF00FF">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="170" cy="75" r="4" fill="#8B5CF6">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Right particles -->
+    <circle cx="340" cy="200" r="5" fill="#FF00FF">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="170" r="7" fill="#00F5FF">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="310" cy="230" r="4" fill="#FFD700">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Bottom particles -->
+    <circle cx="200" cy="340" r="6" fill="#8B5CF6">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="170" cy="325" r="5" fill="#00F5FF">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="230" cy="325" r="4" fill="#FF00FF">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Left particles -->
+    <circle cx="60" cy="200" r="5" fill="#FFD700">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="170" r="6" fill="#FF00FF">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="90" cy="230" r="4" fill="#00F5FF">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Energy Connections -->
+  <g opacity="0.4" stroke-width="1.5">
+    <line x1="200" y1="60" x2="200" y2="100" stroke="url(#energyLine1)" stroke-dasharray="4,4">
+      <animate attributeName="stroke-dashoffset" from="0" to="8" dur="1s" repeatCount="indefinite"/>
+    </line>
+    <line x1="340" y1="200" x2="300" y2="200" stroke="url(#energyLine2)" stroke-dasharray="4,4">
+      <animate attributeName="stroke-dashoffset" from="0" to="8" dur="1.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="200" y1="340" x2="200" y2="300" stroke="url(#energyLine3)" stroke-dasharray="4,4">
+      <animate attributeName="stroke-dashoffset" from="0" to="8" dur="0.9s" repeatCount="indefinite"/>
+    </line>
+    <line x1="60" y1="200" x2="100" y2="200" stroke="url(#energyLine4)" stroke-dasharray="4,4">
+      <animate attributeName="stroke-dashoffset" from="0" to="8" dur="1.1s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Orbiting Particles -->
+  <circle cx="200" cy="200" r="3" fill="#FFFFFF">
+    <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="200;280;200;120;200" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="100;200;300;200;100" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="200" r="3" fill="#FF00FF">
+    <animateTransform attributeName="transform" type="rotate" from="180 200 200" to="540 200 200" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="200;120;200;280;200" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="300;200;100;200;300" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Definitions -->
   <defs>
-    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:1" />
+    <!-- Holographic Gradient -->
+    <radialGradient id="holographic">
+      <stop offset="0%" style="stop-color:#FF00FF;stop-opacity:0.8"/>
+      <stop offset="33%" style="stop-color:#8B5CF6;stop-opacity:0.8"/>
+      <stop offset="66%" style="stop-color:#00F5FF;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0.8"/>
+    </radialGradient>
+
+    <!-- Neon Colors -->
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00F5FF"/>
+      <stop offset="100%" style="stop-color:#00D4FF"/>
     </linearGradient>
+
+    <linearGradient id="neonPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF00FF"/>
+      <stop offset="100%" style="stop-color:#FF00AA"/>
+    </linearGradient>
+
+    <!-- Glow Rings -->
+    <radialGradient id="outerGlow">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#FF00FF;stop-opacity:0"/>
+    </radialGradient>
+
+    <radialGradient id="middleGlow">
+      <stop offset="0%" style="stop-color:#00F5FF;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#00F5FF;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- Energy Lines -->
+    <linearGradient id="energyLine1">
+      <stop offset="0%" style="stop-color:#00F5FF"/>
+      <stop offset="100%" style="stop-color:#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="energyLine2">
+      <stop offset="0%" style="stop-color:#FF00FF"/>
+      <stop offset="100%" style="stop-color:#FFD700"/>
+    </linearGradient>
+    <linearGradient id="energyLine3">
+      <stop offset="0%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#00F5FF"/>
+    </linearGradient>
+    <linearGradient id="energyLine4">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="100%" style="stop-color:#FF00FF"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 </svg>
