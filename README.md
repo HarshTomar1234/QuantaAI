@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Quanta AI Logo](https://img.shields.io/badge/Quanta-AI-8B5CF6?style=for-the-badge&logo=openai&logoColor=white)
+<img src="assets/images/quanta-logo.svg" alt="Quanta AI Logo" width="150" height="150" />
 
 **An intelligent AI-powered search assistant with real-time web search capabilities**
 
